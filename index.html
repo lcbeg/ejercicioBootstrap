@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script>
+      function cambiarColor(){
+        // console.log("Hola!, sí funciona");
+        document.getElementById("generation").style.color = "pink";
+      }
+    </script>
 </head>
 <body>
     <!-- Navegación -->
@@ -38,11 +44,11 @@
     <!-- Descripción-->
     <main class="container-sm">
         <section class="row">
-            <h1>Ser parte de Generation</h1>
+            <h1>Ser parte de <span id="generation">Generation</span></h1>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti distinctio enim perspiciatis molestiae tempore inventore consectetur laudantium vitae. Doloribus sed, quaerat maxime neque dolorum eius esse perspiciatis optio molestiae repellendus.
             </p>
-            <p>
+            <p onclick="cambiarColor()">
                 <a href="https://mexico.generation.org/" target="_blank" class="btn btn-success">Visita el sitio</a>
             </p>
         </section>
